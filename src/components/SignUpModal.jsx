@@ -7,13 +7,22 @@ function SignUpModal({ state, setState, setSignupOpen, signupopen }) {
   const signup = async (e) => {
     e.preventDefault()
 
-    if (state.name && state.email && state.password) {
+    if (state.name && state.email && state.password && state.confirmpassword) {
+      if (state.password !== state.confirmpassword) {
+        return toast.error('Passwords do no match')
+      }
+      if (state.password.length < 7) {
+        return toast.error('Password too short')
+      }
       try {
+        console.log('signinh')
+        console.log(state.email, state.password)
         const { user } = await createUserWithEmailAndPassword(
           auth,
           state.email,
           state.password
         )
+
         const name = state.name
         await updateProfile(user, { displayName: name })
         toast.success('Account Created')
