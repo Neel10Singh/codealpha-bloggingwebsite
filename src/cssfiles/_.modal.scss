@@ -1,0 +1,101 @@
+.modalhidden {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 0;
+  width: 0;
+  transform: scale(0.001);
+  transition: 1s;
+  z-index: 1000;
+}
+.projectmodal {
+  position: absolute;
+  top: 25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 5px 5px 15px black, -5px -5px 15px black;
+  border-radius: 5rem;
+  background-color: white;
+  z-index: 1000;
+  width: 50%;
+  box-sizing: border-box;
+  height: 32rem;
+  overflow: hidden;
+  transition: 0.7s;
+}
+.modalcontent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.modalform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  padding: 2rem;
+}
+.modalinput {
+  height: 4rem;
+  font-size: 2.5rem;
+  border-radius: 2rem;
+  width: 70%;
+  padding-left: 1rem;
+  background-color: white;
+  border: 1px solid $bluecolor;
+
+  &:focus {
+    outline: none;
+    border: 2px solid $bluecolor;
+  }
+}
+
+.closemodal,
+.openproject,
+.opencode {
+  position: absolute;
+  bottom: 1rem;
+  height: 5rem;
+  width: 10rem;
+  border: 2px solid $bluecolor;
+  background-color: transparent;
+  color: $bluecolor;
+  font-family: $regular;
+  border-radius: 2.5rem;
+  transition: 0.5s;
+}
+.openproject:hover,
+.closemodal:hover {
+  background-color: $bluecolor;
+  color: white;
+}
+.openproject:active,
+.closemodal:active {
+  background-color: white;
+  color: $bluecolor;
+}
+.closemodal {
+  left: 52%;
+  // transform: translateX(50%);
+}
+.openproject {
+  left: 50%;
+  transform: translateX(-102%);
+}
+
+@media (max-width: 800px) {
+  .modalinput {
+    width: 90%;
+  }
+
+  .closemodal,
+  .openproject {
+    width: 8rem;
+  }
+}
+@media (max-width: 550px) {
+  .projectmodal {
+    width: 80%;
+  }
+}

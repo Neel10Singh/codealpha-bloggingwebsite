@@ -1,0 +1,67 @@
+@import 'mainpage';
+@import 'postpage';
+@import 'userdash';
+@import '.modal';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #bcd1ec;
+}
+html {
+  font-size: 62.5%;
+}
+button {
+  cursor: pointer;
+  font-family: $regular;
+}
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 550px) {
+  html {
+    font-size: 50%;
+  }
+  .headerbutton {
+    font-size: 1rem;
+  }
+  .mainpage .mainpagefullhead {
+    column-gap: 2rem;
+    .mainpageheader {
+      padding: 0px 3rem;
+      height: 12rem;
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+  .postpage .mainpagefullhead {
+    column-gap: 2rem;
+    .mainpageheader {
+      padding: 0px 3rem;
+      height: 12rem;
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+  .lottieanimation {
+    max-width: 15rem;
+  }
+  .filterbut {
+    font-size: 1rem;
+    min-width: 6rem;
+  }
+  .postbuttons {
+    .attachbutton,
+    .newpostbutton {
+      font-size: 1.3rem !important;
+      width: 4.5rem !important;
+      height: 2.3rem !important;
+    }
+  }
+}

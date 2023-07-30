@@ -1,0 +1,60 @@
+$cursive: 'Borel', cursive;
+$regular: 'Raleway', sans-serif;
+$bluecolor: rgb(13, 76, 202);
+.userdashpage {
+  margin-top: 10rem;
+}
+.userinfodash {
+  margin: 5rem;
+  padding: 2rem;
+  border-radius: 3rem;
+  height: 20rem;
+  width: 30rem;
+  background-color: white;
+  position: relative;
+}
+.userinfodash span {
+  display: block;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+.logoutbut {
+  position: absolute;
+  right: 3rem;
+  bottom: 3rem;
+  background-color: $bluecolor;
+  border: 1px solid $bluecolor;
+  border-radius: 2rem;
+  padding: 0.7rem;
+  padding-bottom: 0;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: $cursive;
+  transition: 0.2s;
+}
+.logoutbut:hover {
+  background-color: white;
+  color: $bluecolor;
+}
+.postsbigbox2 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 20rem;
+  margin-right: 20rem;
+}
+.postsbox {
+  @include flexbox(column);
+  width: 100%;
+  row-gap: 3rem;
+  position: relative;
+  background-color: white;
+  border-radius: 5rem;
+  padding: 0.5rem;
+}
+@media (max-width: 1100px) {
+  .postsbigbox2 {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+}

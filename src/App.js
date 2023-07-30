@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from './logo.svg'
+import './cssfiles/main.css'
+import './App.css'
+import MainPage from './components/MainPage'
+import { Route, Routes } from 'react-router-dom'
+import PostPage from './components/PostPage'
+import UserDash from './components/UserDash'
+import { useEffect, useState } from 'react'
+import { auth } from './firebase'
 function App() {
+  const [user, setuser] = useState(null)
+  useEffect(() => {
+    auth.onAuthStateChanged((authuser) => {
+      if (authuser) {
+        setuser(authuser)
+        // console.log(user)
+      } else {
+        setuser(null)
+      }
+    })
+  }, [])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Routes>
+        <Route path='/' element={<MainPage user={user} setuser={setuser} />} />
+        <Route path='/post/:id' element={<PostPage />} />
+        <Route path='/user' element={<UserDash />} />
+      </Routes>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

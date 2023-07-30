@@ -1,0 +1,1080 @@
+.mainpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+.mainpage .mainpagefullhead {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+  box-sizing: border-box;
+  margin-left: 30rem;
+  margin-right: 15rem;
+  margin-top: 2rem;
+  height: 20rem;
+}
+.mainpage .mainpagefullhead .mainpageheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 15rem;
+  border: 4px solid rgb(13, 76, 202);
+  border-radius: 50%;
+  padding: 0px 3.5rem;
+}
+.mainpage .mainpagefullhead .mainpageheader h1 {
+  font-size: 3rem;
+  font-family: "Borel", cursive;
+  background-color: white;
+  border-radius: 50%;
+  padding: 2rem;
+  padding-bottom: 0;
+}
+.mainpage .headerbutton {
+  position: absolute;
+  border: none;
+  padding: 1rem;
+  width: 7rem;
+  text-align: center;
+  padding-bottom: 0;
+  font-family: "Borel", cursive;
+  background-color: rgb(13, 76, 202);
+  color: white;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+.mainpage .headerbutton:hover {
+  background-color: white;
+  color: rgb(13, 76, 202);
+  outline: 1px solid rgb(13, 76, 202);
+}
+.mainpage .headerbutton:active {
+  background-color: rgb(13, 76, 202);
+  color: white;
+}
+.mainpage .loginbutton {
+  left: 0;
+  transform: translateX(-50%);
+}
+.mainpage .signupbutton {
+  right: 0;
+  transform: translateX(50%);
+}
+.mainpage .lottieanimation {
+  height: 100%;
+  width: 20rem;
+}
+
+.divider {
+  width: 90%;
+  border-bottom: 1px solid rgb(150, 150, 150);
+  margin: 1rem 0;
+}
+
+.dividermain {
+  width: 100%;
+  border-bottom: 1px solid rgb(150, 150, 150);
+  margin: 1rem 0;
+}
+
+.newpostbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: start;
+  font-weight: 700;
+  padding: 1rem 0;
+  width: 30rem;
+  position: fixed;
+  left: 0;
+  height: 100%;
+  top: 0;
+  background-color: white;
+}
+.newpostbox h2 {
+  font-size: 2rem;
+  color: rgb(50, 50, 50);
+  margin-left: -18rem;
+}
+.newpostbox .newposttext {
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  width: 90% !important;
+  border: 2px solid rgb(150, 150, 150);
+  color: rgb(150, 150, 150);
+}
+.newpostbox .newposttext:focus {
+  outline: none;
+  border: 2px solid rgb(100, 100, 100);
+}
+.newpostbox .newtagsinput {
+  margin: 1rem 0;
+  display: flex;
+  width: 80%;
+  justify-content: start;
+}
+.newpostbox .newtagsinput .newtagstext {
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: 2px solid rgb(150, 150, 150);
+  width: 10rem;
+  color: rgb(100, 100, 100);
+}
+.newpostbox .newtagsinput .newtagstext:focus {
+  outline: none;
+  border: 1px solid rgb(100, 100, 100);
+}
+.newpostbox .newtagsinput .newtags {
+  height: 2.2rem;
+  width: 2.2rem;
+  margin-left: 1rem;
+  background-color: none;
+  color: rgb(50, 50, 50);
+  border-radius: 1rem;
+  border: 2px solid rgb(50, 50, 50);
+  font-weight: 700;
+}
+.newpostbox .newtagsinput .newtags:hover {
+  background-color: rgb(50, 50, 50);
+  color: white;
+}
+.newpostbox .showtags {
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
+  row-gap: 0.5rem;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+.newpostbox .showtags .tag {
+  padding: 0.5rem;
+  color: white;
+  background-color: rgb(13, 76, 202);
+  border-radius: 2rem;
+}
+.newpostbox .showtags .crosstag {
+  height: 1.5rem;
+  width: 1.5rem;
+  font-size: 1rem;
+  border: 1px solid white;
+  border-radius: 1rem;
+  color: white;
+  background-color: transparent;
+  margin-left: 0.2rem;
+}
+.newpostbox .postbuttons {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 2rem;
+}
+.newpostbox .postbuttons .attachbutton {
+  width: 6rem;
+  height: 3.5rem;
+  font-size: 3rem;
+  background-color: rgb(13, 76, 202);
+  color: white;
+  border-radius: 5rem;
+  border: 2px solid rgb(13, 76, 202);
+  transition: 0.2s;
+}
+.newpostbox .postbuttons .attachbutton:hover {
+  background-color: white;
+  color: rgb(13, 76, 202);
+}
+.newpostbox .postbuttons .showimg {
+  height: 3rem;
+  width: 5rem;
+}
+.newpostbox .postbuttons .newpostbutton {
+  width: 6rem;
+  height: 3.5rem;
+  font-size: 2rem;
+  background-color: rgb(13, 76, 202);
+  font-weight: 700;
+  color: white;
+  border-radius: 5rem;
+  border: 2px solid rgb(13, 76, 202);
+  transition: 0.2s;
+}
+.newpostbox .postbuttons .newpostbutton:hover {
+  background-color: white;
+  color: rgb(13, 76, 202);
+}
+
+.uploadedimg {
+  height: 10rem;
+  width: 20rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.newpostinfo {
+  color: rgb(100, 100, 100);
+  font-weight: 400;
+}
+
+.hidden {
+  display: none;
+}
+
+.postfiltertitle {
+  color: rgb(50, 50, 50) !important;
+  font-size: 2rem !important;
+  margin-left: 1rem !important;
+}
+
+.tagsbox {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 15rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+  overflow-y: auto;
+}
+.tagsbox h2 {
+  font-size: 2rem;
+  color: rgb(50, 50, 50);
+}
+
+.filterbut {
+  margin: 0.5rem 0;
+  background-color: rgb(13, 76, 202);
+  text-align: center;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  padding: 0.5rem;
+  border-radius: 3rem;
+  min-width: 10rem;
+  font-weight: 700;
+  border: 2px solid rgb(13, 76, 202);
+}
+.filterbut:hover {
+  background-color: white;
+  color: rgb(13, 76, 202);
+}
+.filterbut:active {
+  background-color: rgb(13, 76, 202);
+  color: white;
+}
+
+.filterbut3 {
+  background-color: rgb(13, 76, 202);
+  text-align: center;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  padding: 0.3rem;
+  border-radius: 3rem;
+  min-width: 8rem;
+  font-weight: 500;
+  border: 2px solid rgb(13, 76, 202);
+  font-size: 1rem;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.filterbut3:hover {
+  background-color: white;
+  color: rgb(13, 76, 202);
+}
+.filterbut3:active {
+  background-color: rgb(13, 76, 202);
+  color: white;
+}
+
+.filterbut2 {
+  margin: 0.5rem 0;
+  background-color: white;
+  text-align: center;
+  color: rgb(13, 76, 202);
+  font-family: "Raleway", sans-serif;
+  padding: 0.8rem;
+  border-radius: 3rem;
+  min-width: 10rem;
+  font-weight: 700;
+  border: 2px solid rgb(13, 76, 202);
+}
+.filterbut2:hover {
+  background-color: rgb(13, 76, 202);
+  color: white;
+}
+.filterbut2:active {
+  background-color: white;
+  color: rgb(13, 76, 202);
+}
+
+.readmore {
+  font-weight: 700;
+  color: rgb(95, 95, 95);
+  position: absolute;
+  right: 1rem;
+  bottom: 5.2rem;
+  padding-left: 3rem;
+  padding-top: 1rem;
+  font-size: 2rem;
+  background-color: white;
+}
+
+.postbuttons2 {
+  color: white;
+  display: flex;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  transition: 0.3s;
+  flex: 1;
+}
+
+.editbut,
+.deletebut {
+  background-color: rgb(13, 76, 202);
+  height: 3rem;
+  width: 3rem;
+  font-size: 1.5rem;
+  border-radius: 3rem;
+  border: 1px solid rgb(13, 76, 202);
+  color: white;
+  transition: 0.3s;
+}
+
+.editbut:hover {
+  background-color: rgb(218, 196, 0);
+}
+
+.deletebut:hover {
+  background-color: rgb(159, 0, 0);
+}
+
+.postsbigbox {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 32rem;
+  padding-right: 17rem;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.postsbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  row-gap: 3rem;
+  position: relative;
+  background-color: white;
+  border-radius: 5rem;
+  padding: 0.5rem;
+}
+.postsbox .post {
+  height: 20rem;
+  display: flex;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  border: 1px solid rgb(13, 76, 202);
+  background-color: transparent;
+  position: relative;
+  border-radius: 5rem;
+  padding: 0.3rem;
+  transition: 0.2s;
+  width: 100%;
+}
+.postsbox .post .postimg {
+  height: 100%;
+  border-top-left-radius: 5rem;
+  border-bottom-left-radius: 5rem;
+  min-width: 30%;
+  max-width: 30%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.postsbox .post .postdesc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: start;
+}
+.postsbox .post .postbody {
+  margin-top: 0.3rem;
+  padding-right: 1.5rem;
+  font-family: "Raleway", sans-serif;
+  line-height: 3rem;
+  max-height: 70%;
+  overflow: hidden;
+}
+.postsbox .post .postfooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  right: 1rem;
+  bottom: 1rem;
+  padding: 1rem;
+  width: 100%;
+}
+.postsbox .post .postdets {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #7a7a7a;
+  flex: 1;
+}
+.postsbox .post .posttags {
+  display: flex;
+  justify-content: end;
+  flex: 1;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+
+.posttitle {
+  font-size: 2.7rem;
+}
+
+@media (max-width: 1000px) {
+  .newpostbox {
+    position: relative;
+    width: 80%;
+    border-radius: 5rem;
+    margin-right: 15rem;
+    margin-left: 2rem;
+    padding-bottom: 3rem;
+  }
+  .newpostbox .postbuttons {
+    justify-content: end;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+  }
+  .readmore {
+    bottom: 5.8rem;
+  }
+  .postimg {
+    width: 35% !important;
+  }
+  .postdets {
+    font-size: 0.8rem !important;
+  }
+  .mainpagefullhead {
+    margin-left: 1rem !important;
+  }
+  .postsbigbox {
+    padding-left: 1rem;
+  }
+  .newposttext {
+    height: 10rem;
+  }
+}
+@media (max-width: 800px) {
+  .mainpagefullhead {
+    width: 90%;
+    margin-right: 2rem !important;
+  }
+  .newpostbox {
+    margin-right: 2rem;
+    width: 90%;
+  }
+  .readmore {
+    font-size: 1.5rem;
+  }
+  .post {
+    height: 16rem !important;
+  }
+  .postimg {
+    max-width: 35%;
+  }
+  .postdesc {
+    font-size: 1rem !important;
+  }
+  .postsbigbox {
+    padding-right: 1rem;
+  }
+  .tagsbox {
+    position: relative;
+    flex-direction: row;
+    width: 90%;
+    padding-top: 0;
+    margin-top: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+    border-radius: 2rem;
+  }
+  .tagsbox h2 {
+    margin-left: 0;
+  }
+  .tagsbox .divider {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .filterbut {
+    padding: 0.3rem 0;
+    margin: 0;
+    font-size: 0.8rem;
+  }
+  .posttags {
+    display: none;
+  }
+  .filterbut3 {
+    font-size: 0.6rem;
+    width: 4rem !important;
+    min-width: 4rem;
+  }
+  .postbuttons2 {
+    -moz-column-gap: 0.5rem;
+         column-gap: 0.5rem;
+  }
+  .postbuttons2 .editbut,
+  .postbuttons2 .deletebut {
+    font-size: 0.8rem;
+    height: 2rem;
+    width: 2rem;
+  }
+  .readmore {
+    bottom: 4.7rem;
+  }
+}
+.postpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+.postpage .mainpagefullhead {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 2rem;
+  height: 20rem;
+}
+.postpage .mainpagefullhead .mainpageheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 15rem;
+  border: 4px solid rgb(13, 76, 202);
+  border-radius: 50%;
+  padding: 0px 3.5rem;
+}
+.postpage .mainpagefullhead .mainpageheader h1 {
+  font-size: 3rem;
+  font-family: "Borel", cursive;
+  background-color: white;
+  border-radius: 50%;
+  padding: 2rem;
+  padding-bottom: 0;
+}
+.postpage .headerbutton {
+  position: absolute;
+  border: none;
+  padding: 1rem;
+  width: 7rem;
+  text-align: center;
+  padding-bottom: 0;
+  font-family: "Borel", cursive;
+  background-color: rgb(13, 76, 202);
+  color: white;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+.postpage .headerbutton:hover {
+  background-color: white;
+  color: rgb(13, 76, 202);
+  outline: 1px solid rgb(13, 76, 202);
+}
+.postpage .loginbutton {
+  left: 0;
+  transform: translateX(-50%);
+}
+.postpage .signupbutton {
+  right: 0;
+  transform: translateX(50%);
+}
+.postpage .lottieanimation {
+  height: 100%;
+  width: 20rem;
+}
+
+.posttags2 {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  padding: 2rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+
+.postdets {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #7a7a7a;
+}
+
+.postexpanded {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 5rem;
+  width: 60%;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+
+.posteximg {
+  height: 40rem;
+  max-width: 80%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.postexdesc {
+  margin-top: 3rem;
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  line-height: 3rem;
+  text-align: justify;
+}
+
+.backbut {
+  position: fixed;
+  top: 3rem;
+  left: 3rem;
+  padding: 0.5rem;
+  font-size: 2rem;
+  border-radius: 50%;
+  width: 3.7rem;
+  border: 2px solid rgb(13, 76, 202);
+  background-color: rgb(13, 76, 202);
+  color: white;
+  transition: 0.2s;
+}
+.backbut:hover {
+  background-color: white;
+  color: rgb(13, 76, 202);
+}
+
+@media (max-width: 800px) {
+  .postexpanded {
+    width: 90%;
+  }
+  .posteximg {
+    max-width: 100%;
+  }
+  .postexdesc {
+    margin-top: 2rem;
+  }
+}
+.newpostboxhidden {
+  display: none;
+}
+
+.editpostbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: start;
+  font-weight: 700;
+  padding: 1rem 0;
+  left: 0;
+  height: 100%;
+  top: 0;
+  background-color: white;
+  position: relative;
+  width: 80%;
+  border-radius: 5rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+.editpostbox h2 {
+  font-size: 2rem;
+  color: rgb(50, 50, 50);
+  margin-left: -18rem;
+}
+.editpostbox .newposttext {
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  width: 90% !important;
+  border: 2px solid rgb(150, 150, 150);
+  color: rgb(150, 150, 150);
+}
+.editpostbox .newposttext:focus {
+  outline: none;
+  border: 2px solid rgb(100, 100, 100);
+}
+.editpostbox .newtagsinput {
+  margin: 1rem 0;
+  display: flex;
+  width: 80%;
+  justify-content: start;
+}
+.editpostbox .newtagsinput .newtagstext {
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: 2px solid rgb(150, 150, 150);
+  width: 10rem;
+  color: rgb(100, 100, 100);
+}
+.editpostbox .newtagsinput .newtagstext:focus {
+  outline: none;
+  border: 1px solid rgb(100, 100, 100);
+}
+.editpostbox .newtagsinput .newtags {
+  height: 2.2rem;
+  width: 2.2rem;
+  margin-left: 1rem;
+  background-color: none;
+  color: rgb(50, 50, 50);
+  border-radius: 1rem;
+  border: 2px solid rgb(50, 50, 50);
+  font-weight: 700;
+}
+.editpostbox .newtagsinput .newtags:hover {
+  background-color: rgb(50, 50, 50);
+  color: white;
+}
+.editpostbox .showtags {
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
+  row-gap: 0.5rem;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+.editpostbox .showtags .tag {
+  padding: 0.5rem;
+  color: white;
+  background-color: rgb(13, 76, 202);
+  border-radius: 2rem;
+}
+.editpostbox .showtags .crosstag {
+  height: 1.5rem;
+  width: 1.5rem;
+  font-size: 1rem;
+  border: 1px solid white;
+  border-radius: 1rem;
+  color: white;
+  background-color: transparent;
+  margin-left: 0.2rem;
+}
+.editpostbox .postbuttons {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 2rem;
+}
+.editpostbox .postbuttons .attachbutton {
+  width: 6rem;
+  height: 3.5rem;
+  font-size: 3rem;
+  background-color: rgb(13, 76, 202);
+  color: white;
+  border-radius: 5rem;
+  border: 2px solid rgb(13, 76, 202);
+  transition: 0.2s;
+}
+.editpostbox .postbuttons .attachbutton:hover {
+  background-color: white;
+  color: rgb(13, 76, 202);
+}
+.editpostbox .postbuttons .showimg {
+  height: 3rem;
+  width: 5rem;
+}
+.editpostbox .postbuttons .newpostbutton {
+  width: 6rem;
+  height: 3.5rem;
+  font-size: 2rem;
+  background-color: rgb(13, 76, 202);
+  font-weight: 700;
+  color: white;
+  border-radius: 5rem;
+  border: 2px solid rgb(13, 76, 202);
+  transition: 0.2s;
+}
+.editpostbox .postbuttons .newpostbutton:hover {
+  background-color: white;
+  color: rgb(13, 76, 202);
+}
+
+.editpostbox .postbuttons {
+  justify-content: end;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+
+.userdashpage {
+  margin-top: 10rem;
+}
+
+.userinfodash {
+  margin: 5rem;
+  padding: 2rem;
+  border-radius: 3rem;
+  height: 20rem;
+  width: 30rem;
+  background-color: white;
+  position: relative;
+}
+
+.userinfodash span {
+  display: block;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+
+.logoutbut {
+  position: absolute;
+  right: 3rem;
+  bottom: 3rem;
+  background-color: rgb(13, 76, 202);
+  border: 1px solid rgb(13, 76, 202);
+  border-radius: 2rem;
+  padding: 0.7rem;
+  padding-bottom: 0;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Borel", cursive;
+  transition: 0.2s;
+}
+
+.logoutbut:hover {
+  background-color: white;
+  color: rgb(13, 76, 202);
+}
+
+.postsbigbox2 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 20rem;
+  margin-right: 20rem;
+}
+
+.postsbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  row-gap: 3rem;
+  position: relative;
+  background-color: white;
+  border-radius: 5rem;
+  padding: 0.5rem;
+}
+
+@media (max-width: 1100px) {
+  .postsbigbox2 {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+}
+.modalhidden {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 0;
+  width: 0;
+  transform: scale(0.001);
+  transition: 1s;
+  z-index: 1000;
+}
+
+.projectmodal {
+  position: absolute;
+  top: 25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 5px 5px 15px black, -5px -5px 15px black;
+  border-radius: 5rem;
+  background-color: white;
+  z-index: 1000;
+  width: 50%;
+  box-sizing: border-box;
+  height: 32rem;
+  overflow: hidden;
+  transition: 0.7s;
+}
+
+.modalcontent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.modalform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  padding: 2rem;
+}
+
+.modalinput {
+  height: 4rem;
+  font-size: 2.5rem;
+  border-radius: 2rem;
+  width: 70%;
+  padding-left: 1rem;
+  background-color: white;
+  border: 1px solid rgb(13, 76, 202);
+}
+.modalinput:focus {
+  outline: none;
+  border: 2px solid rgb(13, 76, 202);
+}
+
+.closemodal,
+.openproject,
+.opencode {
+  position: absolute;
+  bottom: 1rem;
+  height: 5rem;
+  width: 10rem;
+  border: 2px solid rgb(13, 76, 202);
+  background-color: transparent;
+  color: rgb(13, 76, 202);
+  font-family: "Raleway", sans-serif;
+  border-radius: 2.5rem;
+  transition: 0.5s;
+}
+
+.openproject:hover,
+.closemodal:hover {
+  background-color: rgb(13, 76, 202);
+  color: white;
+}
+
+.openproject:active,
+.closemodal:active {
+  background-color: white;
+  color: rgb(13, 76, 202);
+}
+
+.closemodal {
+  left: 52%;
+}
+
+.openproject {
+  left: 50%;
+  transform: translateX(-102%);
+}
+
+@media (max-width: 800px) {
+  .modalinput {
+    width: 90%;
+  }
+  .closemodal,
+  .openproject {
+    width: 8rem;
+  }
+}
+@media (max-width: 550px) {
+  .projectmodal {
+    width: 80%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #bcd1ec;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+button {
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 550px) {
+  html {
+    font-size: 50%;
+  }
+  .headerbutton {
+    font-size: 1rem;
+  }
+  .mainpage .mainpagefullhead {
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+  .mainpage .mainpagefullhead .mainpageheader {
+    padding: 0px 3rem;
+    height: 12rem;
+  }
+  .mainpage .mainpagefullhead .mainpageheader h1 {
+    font-size: 2.5rem;
+  }
+  .postpage .mainpagefullhead {
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+  .postpage .mainpagefullhead .mainpageheader {
+    padding: 0px 3rem;
+    height: 12rem;
+  }
+  .postpage .mainpagefullhead .mainpageheader h1 {
+    font-size: 2.5rem;
+  }
+  .lottieanimation {
+    max-width: 15rem;
+  }
+  .filterbut {
+    font-size: 1rem;
+    min-width: 6rem;
+  }
+  .postbuttons .attachbutton,
+  .postbuttons .newpostbutton {
+    font-size: 1.3rem !important;
+    width: 4.5rem !important;
+    height: 2.3rem !important;
+  }
+}/*# sourceMappingURL=main.css.map */
