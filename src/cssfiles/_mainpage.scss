@@ -511,6 +511,8 @@ $bluecolor: rgb(13, 76, 202);
     flex-wrap: wrap;
     column-gap: 1rem;
     border-radius: 2rem;
+    max-height: 10rem;
+    overflow-y: auto;
 
     h2 {
       margin-left: 0;
